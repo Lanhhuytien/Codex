@@ -1,0 +1,191 @@
+export const categories = [
+  { id: 'iphone', name: 'iPhone', icon: '📱' },
+  { id: 'samsung', name: 'Samsung', icon: '🌟' },
+  { id: 'xiaomi', name: 'Xiaomi', icon: '⚡' },
+  { id: 'oppo', name: 'OPPO', icon: '✨' },
+  { id: 'realme', name: 'Realme', icon: '🚀' },
+  { id: 'accessories', name: 'Phụ kiện', icon: '🎧' }
+];
+
+export const products = [
+  {
+    id: 'ip15pm-256',
+    name: 'iPhone 15 Pro Max 256GB',
+    brand: 'Apple',
+    category: 'iphone',
+    price: 34990000,
+    salePrice: 29990000,
+    discount: 14,
+    capacity: '256GB',
+    colors: ['Titan Tự nhiên', 'Titan Đen', 'Titan Xanh'],
+    installment: true,
+    badge: 'Độc quyền',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/iphone15promax.png',
+    highlights: ['Chip A17 Pro', 'Camera Tele 5X', 'Sạc nhanh 27W'],
+    description: 'Flagship đẳng cấp với hiệu năng mạnh, camera zoom 5X và khung titan siêu nhẹ.',
+    related: ['ip15-128', 's24u-256']
+  },
+  {
+    id: 'ip15-128',
+    name: 'iPhone 15 128GB',
+    brand: 'Apple',
+    category: 'iphone',
+    price: 22990000,
+    salePrice: 19990000,
+    discount: 13,
+    capacity: '128GB',
+    colors: ['Hồng', 'Xanh', 'Đen'],
+    installment: true,
+    badge: 'Trả góp 0%',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/iphone15.png',
+    highlights: ['Dynamic Island', 'Camera 48MP', 'Sạc USB-C'],
+    description: 'Thiết kế trẻ trung, camera 48MP sắc nét, sạc USB-C tiện lợi.',
+    related: ['ip15pm-256', 's24-128']
+  },
+  {
+    id: 's24u-256',
+    name: 'Samsung Galaxy S24 Ultra 256GB',
+    brand: 'Samsung',
+    category: 'samsung',
+    price: 32990000,
+    salePrice: 27990000,
+    discount: 15,
+    capacity: '256GB',
+    colors: ['Titan Gray', 'Titan Black'],
+    installment: true,
+    badge: 'Giảm sốc',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/s24ultra.png',
+    highlights: ['Camera 200MP', 'S Pen tích hợp', 'Zoom 100X'],
+    description: 'Sức mạnh AI, camera 200MP, trải nghiệm S Pen tối ưu.',
+    related: ['s24-128', 'ip15pm-256']
+  },
+  {
+    id: 's24-128',
+    name: 'Samsung Galaxy S24 128GB',
+    brand: 'Samsung',
+    category: 'samsung',
+    price: 21990000,
+    salePrice: 18990000,
+    discount: 14,
+    capacity: '128GB',
+    colors: ['Vàng', 'Đen'],
+    installment: true,
+    badge: 'Trả góp 0%',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/s24.png',
+    highlights: ['Màn hình Dynamic AMOLED 2X', 'AI cải thiện ảnh', 'Sạc nhanh 45W'],
+    description: 'Thiết kế mỏng nhẹ, hiệu năng mạnh mẽ cùng camera AI thông minh.',
+    related: ['s24u-256', 'ip15-128']
+  },
+  {
+    id: 'mi14-256',
+    name: 'Xiaomi 14 256GB',
+    brand: 'Xiaomi',
+    category: 'xiaomi',
+    price: 18990000,
+    salePrice: 15990000,
+    discount: 16,
+    capacity: '256GB',
+    colors: ['Xanh', 'Trắng'],
+    installment: true,
+    badge: 'Giảm sốc',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/xiaomi14.png',
+    highlights: ['Camera Leica', 'Snapdragon 8 Gen 3', 'Sạc 90W'],
+    description: 'Trải nghiệm nhiếp ảnh cao cấp với cảm biến Leica và hiệu năng mạnh.',
+    related: ['mi14-512', 'reno12-256']
+  },
+  {
+    id: 'mi14-512',
+    name: 'Xiaomi 14 512GB',
+    brand: 'Xiaomi',
+    category: 'xiaomi',
+    price: 21990000,
+    salePrice: 17990000,
+    discount: 18,
+    capacity: '512GB',
+    colors: ['Xanh', 'Đen'],
+    installment: true,
+    badge: 'Độc quyền',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/xiaomi14pro.png',
+    highlights: ['Camera Leica Summilux', 'Snapdragon 8 Gen 3', 'Sạc 120W'],
+    description: 'Phiên bản dung lượng lớn, cấu hình mạnh, tối ưu cho game và ảnh.',
+    related: ['mi14-256', 'reno12-256']
+  },
+  {
+    id: 'reno12-256',
+    name: 'OPPO Reno12 5G 256GB',
+    brand: 'OPPO',
+    category: 'oppo',
+    price: 13990000,
+    salePrice: 11990000,
+    discount: 14,
+    capacity: '256GB',
+    colors: ['Bạc', 'Đen'],
+    installment: true,
+    badge: 'Trả góp 0%',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/reno12.png',
+    highlights: ['Camera chân dung AI', 'Màn hình cong 120Hz', 'Sạc SuperVOOC'],
+    description: 'Thiết kế thanh lịch, camera AI xử lý chân dung tự nhiên.',
+    related: ['reno12-512', 'mi14-256']
+  },
+  {
+    id: 'reno12-512',
+    name: 'OPPO Reno12 Pro 5G 512GB',
+    brand: 'OPPO',
+    category: 'oppo',
+    price: 16990000,
+    salePrice: 14990000,
+    discount: 12,
+    capacity: '512GB',
+    colors: ['Bạc', 'Đen'],
+    installment: true,
+    badge: 'Độc quyền',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/reno12pro.png',
+    highlights: ['Camera AI sáng tạo', 'Màn hình 1.5K 120Hz', 'Sạc SuperVOOC 80W'],
+    description: 'Phiên bản Pro cao cấp, tối ưu nhiếp ảnh và hiệu năng đa nhiệm.',
+    related: ['reno12-256', 'realme12-256']
+  },
+  {
+    id: 'realme12-256',
+    name: 'Realme 12 Pro+ 256GB',
+    brand: 'Realme',
+    category: 'realme',
+    price: 12990000,
+    salePrice: 10990000,
+    discount: 15,
+    capacity: '256GB',
+    colors: ['Xanh', 'Be'],
+    installment: true,
+    badge: 'Giảm sốc',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/realme12.png',
+    highlights: ['Camera tiềm vọng 120X', 'Màn 120Hz', 'Sạc 80W'],
+    description: 'Thiết kế độc đáo, camera tiềm vọng zoom 120X và sạc nhanh 80W.',
+    related: ['reno12-256', 'mi14-256']
+  },
+  {
+    id: 'buds-pro',
+    name: 'Tai nghe Buds Pro',
+    brand: 'Phụ kiện',
+    category: 'accessories',
+    price: 2990000,
+    salePrice: 1990000,
+    discount: 33,
+    capacity: '---',
+    colors: ['Đen', 'Trắng'],
+    installment: false,
+    badge: 'Phụ kiện hot',
+    image:
+      'https://res.cloudinary.com/dy7eycl8m/image/upload/v1700000000/mock/budspro.png',
+    highlights: ['Chống ồn chủ động', 'Pin 30h', 'Sạc nhanh'],
+    description: 'Âm thanh sống động, chống ồn chủ động, kết nối đa điểm.',
+    related: ['ip15-128', 's24-128']
+  }
+];
